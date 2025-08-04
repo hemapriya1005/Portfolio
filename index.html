@@ -1,0 +1,228 @@
+<!-- Declares this as an HTML5 document -->
+<!DOCTYPE html>
+    <!-- Root element of the HTML document with english language -->
+    <html lang = "en">
+        <!-- Not visible in webpage but contains the meta informations -->    
+        <head>
+            <!-- Sets character encoding to UTF-8 (supports all character) -->
+            <meta charset="UTF-8">
+            <!-- Describes the content of the webpage for search engines & social media -->
+            <meta name="description" content="Simple responsive landing page">
+            <!-- Specifies the author of the web page -->
+            <meta name="author" content="Hema Priya V">
+            <!-- Sets the viewport to match the device's width & enables responsible scaling on mobile devices-->
+            <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+            <!-- Title of the webpage shown in the brower tab -->
+            <title>Portfolio | Hema Priya V</title>
+            <!-- link awesome font for different fonts & icons -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            <!-- links the external css file for styling -->
+            <link rel="stylesheet" href="style.css">
+        </head>
+
+        <!-- Main content of the webpage -->
+        <body>
+
+            <!-- Header Section Starts -->
+            <header>
+
+
+               <input type="checkbox" id="menu-toggle" />
+               <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+                <!-- For logo -->
+                <div class="logo">Portfolio</div>
+                <input type="text" placeholder="Hema Priya" readonly>
+
+                 <!-- Navigation links to section -->
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social-icons">
+                  <a href="https://github.com/hemapriya1005" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://linkedin.com/in/hema-priya037" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </header>
+            <!-- Header Section ends -->
+
+            <!-- Hero Section Starts -->
+            <section id="hero" class="hero">
+            <div class="hero-content">
+                <img src="Profile.jpg" alt="Hema Priya V" class="profile-pic">
+                <div class="hero-text">
+                    <h1>Hi, I'm Hema</h1>
+                    <h3>Aspirant Web Developer</h3>
+                    <p>I'm a passionate developer who loves crafting unique, interactive websites. I blend logic with creativity to build experiences that feel alive.</p>
+                    <a href="#projects" class="cta-button">See My Works</a>
+                </div>
+            </div>
+            </section>
+            <!-- Hero Section ends -->
+
+            <!-- About Section Starts-->
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <div class="about-container">
+                    <div class="about-text">
+                        <p><strong>Hello! I'm Hema</strong> 👋</p>
+                        <p>I'm a passionate and creative web designer & developer. I love turning ideas into beautiful websites that work on any device.</p>
+                        <p>I enjoy learning, problem-solving, and bringing fresh ideas to every project. Whether it's designing cool layouts or writing clean code — I love what I do!</p>
+                        <p>Right now, I'm learning full-stack development to become a complete web creator.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section ends-->
+
+            <!-- Skills Section Starts -->
+            <section id="skills" class="skills">
+                <h2>My Skills</h2>
+                <div class="skill-list">
+                    <div class="skill-categories">
+                        <div class="skill-group">
+                            <h3>Frontend</h3>
+                            <div class="skill-list">
+                                <div class="skill-card"><i class="fab fa-html5"></i><br>HTML</div>
+                                <div class="skill-card"><i class="fab fa-css3-alt"></i><br>CSS</div>
+                                <div class="skill-card"><i class="fab fa-js"></i><br>JavaScript</div>
+                                <div class="skill-card"><i class="fas fa-code"></i><br>Web Development</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                            <h3>Backend</h3>
+                            <div class="skill-list">
+                                <div class="skill-card"><i class="fab fa-python"></i><br>Python</div>
+                                <div class="skill-card"><i class="fas fa-database"></i><br>SQL</div>
+                                <div class="skill-card"><i class="fas fa-database"></i><br>SQLite</div>
+                            </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Tools</h3>
+                        <div class="skill-list">
+                            <div class="skill-card"><i class="fab fa-git-alt"></i><br>Git</div>
+                            <div class="skill-card"><i class="fab fa-github"></i><br>GitHub</div>
+                            <div class="skill-card"><i class="fas fa-code"></i><br>Visual Studio</div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+            <!-- Skills Section ends -->
+
+            <!-- Project Section Starts -->
+            <section id="projects" class="projects">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="Project1.png" alt="Project 1">
+                        <h3>Portfoilo Website</h3>
+                        <p>This portfolio website is a creative and personalized space where I present my background, achievements, and goals. It includes dedicated sections for my introduction, skills, certifications, projects, and contact details. The site is designed with an emphasis on visual appeal, interactivity, and a clear layout to provide visitors with a smooth and engaging browsing experience. Special attention was given to design aesthetics, typography, and responsiveness across devices to ensure it looks great on both desktop and mobile.</p>
+                        <p>#html  #css</p>
+                        <a href=""target="_blank">View Project</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Project Section ends -->
+
+            <!-- Certification Section Starts -->
+            <section class="certifications" id="certifications">
+                <h2>Certifications & Achievements</h2>
+                <div class="certification-grid">
+                    <div class="certification-card">
+                        <i class="fas fa-code fa-2x"></i>
+                        <h3>Web Development for Beginners</h3>
+                        <p>Completed from <strong>Simplilearn</strong> — covered HTML, CSS, JavaScript basics, and responsive design.</p>
+                    </div>
+                <div class="certification-card">
+                    <i class="fas fa-bug fa-2x"></i>
+                    <h3>1st Prize - Debugging Competition</h3>
+                    <p>Secured first place in a <strong>debugging competition</strong> organized by our informal college coding club.</p>
+                </div>
+                <div class="certification-card">
+                    <i class="fab fa-google-play fa-2x"></i>
+                    <h3>Flutter Workshop Attendee</h3>
+                    <p>Participated in a <strong>Flutter workshop</strong> — explored mobile app development, UI widgets, and Dart fundamentals.</p>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-users fa-2x"></i>
+                    <h3>Effective Leadership</h3>
+                    <p>Certified by <strong>HP LIFE</strong> — learned key leadership skills to improve team collaboration and confidence.</p>
+                </div>
+            </section>
+            <!-- Certification Section ends -->
+
+            <!-- Contact Section Starts -->
+            <section id="contact" class="contact">
+                <h2>Contact Me</h2>
+                <p>Want to Collaborate, hire me, or just say hello? Feel free to to get in touch by filling this form.</p>
+
+                <!-- Form Section Starts -->
+                <form>
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <!-- Subject -->
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" placeholder="Message Subject" required>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit">Send Message</button>
+                </form>
+                <!-- Form Section ends -->
+
+            </section>
+            <!-- Contact Section ends -->
+
+            <!-- Footer Section Starts -->
+            <footer>
+                <div class="box-container">
+                    <div class="box">
+                        <h3>Quick Links</h3>
+                        <a href="#hero"><i class="fas fa-home"></i> Home</a>
+                        <a href="#about"><i class="fas fa-user"></i> About</a>
+                        <a href="#skills"><i class="fas fa-laptop-code"></i> Skills</a>
+                        <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+                        <a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a>
+                        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                </div>
+
+                <!-- location Info -->
+                <div class="box">
+                    <h3>Location</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Madurai, Tamil Nadu, India</p>
+                </div>
+
+                <!-- Social Media Info -->
+                <div class="social-links">
+                    <a href="https://github.com/hemapriya1005" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/hema-priya037" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+
+                <p>Made by Hema © 2025 | All rights reserved</p>
+            </footer>
+            <!--  Footer Section ends -->
+
+        </body>
+    </html>
