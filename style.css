@@ -738,65 +738,38 @@ header {
 }
 
 /* ========== Mobile (below 767px) ========== */
-@media screen and (max-width: 767px) {
-  header {
-    padding: 0.5rem 1rem;
+@media (max-width: 768px) {
+  /* Layout fixes for mobile */
+  
+  body {
+    font-size: 14px; /* smaller text for smaller screens */
+    padding: 10px;
   }
 
-  .logo {
-    height: 40px;
-    max-width: 100px;
+  header, nav, section, footer {
+    padding: 10px;
   }
 
-  .search-input {
-    font-size: 0.8rem;
-    padding: 0.3rem 0.5rem;
-    max-width: 120px;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 999;
-  }
-
-  .nav-links {
-    display: none;
+  /* Make columns stack */
+  .row, .container {
     flex-direction: column;
-    background-color: #111;
-    border-top: 1px solid #0ef;
-    padding: 1rem 0;
   }
 
-  #menu-toggle:checked ~ nav .nav-links {
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Navigation vertical */
+  nav ul {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .nav-links li {
-    text-align: center;
-    border-bottom: 1px solid #0ef;
-  }
-
-  .nav-links li a {
-    display: block;
-    padding: 1rem;
-    color: white;
-  }
-
-  /* Show social icons */
-  .social-icons {
-    justify-content: center;
-    padding: 0.5rem;
-  }
-
-  #menu-toggle:checked ~ nav .social-icons {
-    display: flex;
-    flex-direction: row;
+  /* Buttons / links full-width */
+  button, .btn {
+    width: 100%;
   }
 }
